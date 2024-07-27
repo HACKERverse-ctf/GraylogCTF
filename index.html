@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graylog CTF</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .text-success span {
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .btn {
+            color: white;
+            background-color: teal;
+            padding: 25px 50px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: darkcyan;
+        }
+
+        img {
+            width: 200px;
+            margin: 7px;
+        }
+
+        h1, .text-mono {
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .text-mono {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop class="bg-video">
+    <source src="https://hackerverse-ctfd-files.s3.amazonaws.com/matrix.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<div class="jumbotron bg-transparent mb-0 radius-0 content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <br>
+                <br>
+                <br>
+                <h1>PlexTrac CTF<span class="vim-caret">&nbsp;</span></h1>
+                <div class="lead mb-3 text-mono text-success">
+                    <br>
+                    <span>From within the HACKERverse, join the Capture The Flag (CTF)! In this challenge, you'll tackle vulnerabilities; the fastest team to seize all the flags will be awarded an exclusive exam voucher from TCM Security!.</span>
+                </div><br><br>
+                <div class="text-mono">
+                    <a href="https://discord.gg/hacer-rs-952244889192648775" class="btn">
+                        Git'R'Done!
+                    </a>
+                </div><br><br><br>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <a href="https://www.linkedin.com/company/hackerverse/">
+                        <img src="https://hackerverse-ctfd-files.s3.amazonaws.com/hackerverse.png" alt="Hackerverse Logo">
+                    </a>
+                    <a href="https://tcm-sec.com/">
+                        <img src="https://hackerverse-ctfd-files.s3.amazonaws.com/GraylogLogoCTF.png" alt="Graylog Logo">
+                    </a>
+                    <a href="https://plextrac.com/">
+                        <img src="https://hackerverse-ctfd-files.s3.amazonaws.com/TCM-Security-GreenDiamondPlate_stickercut.png" alt="TCM Security Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
